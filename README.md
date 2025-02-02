@@ -1,17 +1,32 @@
-You can get All the resources using below link------>https://drive.google.com/drive/folders/16x0Tzcn9sh_CrtBPXN1ZRmkQZZNF8Ivz?usp=drive_link
+# COVID-19 and Pneumonia X-Ray Detector
 
-# Covid-19_and_Pneumonia_X-Ray_Detector
-Aim of this project is to detect Covid-19 from X-ray and also able to differentitate Covid-19 from viral pneumonia and bacterial pneumonia. I have created a custom dataset that contains covid-19 x-ray images, viral pneumonia x-ray images, bacterial pneumonia x-ray iamges and normal person x-ray images.Each class contains 133 images.
+## Project Overview
+This project implements a deep learning model to detect and differentiate between COVID-19, viral pneumonia, bacterial pneumonia, and normal conditions using chest X-ray images. The model serves as a diagnostic aid tool for medical professionals.
 
-## Dataset
+## Dataset Information
+The dataset is a custom compilation containing balanced classes with 133 images each:
+- COVID-19 X-ray images (Class 0)
+- Normal X-ray images (Class 1)
+- Viral Pneumonia X-ray images (Class 2)
+- Bacterial Pneumonia X-ray images (Class 3)
 
-I have used data from https://github.com/ieee8023/covid-chestxray-dataset and https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. 
+### Data Sources
+The dataset was created using images from:
+1. [COVID-19 Chest X-ray Dataset](https://github.com/ieee8023/covid-chestxray-dataset)
+2. [Chest X-Ray Pneumonia Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
-0 - Covid-19
+## Requirements
+- Python 3.7+
+- TensorFlow 
+- NumPy
+- Pandas
+- Matplotlib
+- scikit-learn
 
-1 - Normal X-ray
+## Model Architecture
+- The model uses a convolutional neural network (CNN) architecture
+- Input: X-ray images (preprocessed and standardized)
+- Output: 4-class classification (COVID-19, Normal, Viral Pneumonia, Bacterial Pneumonia)
 
-2 - Viral Pneumonia X-ray
-
-3 - Bacterial Pneumonia X-ray
-
+## Performance Metrics
+- Confusion Matrix
